@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->
+
+    Studiare e memorizzare le seguenti regole di integrazione, che estendono quelle studiate 
+    nelle lezioni precedenti.
+    
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di integrazione (generalizzate)</h3>
+    <div class="esempi-container">  
+        <ul>
+            <li>
+                \[
+                    \int f(x)^{\alpha} f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{f'(x)}{f(x)} \,\, dx = ln\left(|f(x)|\right) + c
+                \]
+            </li>
+            <br>            
+            <li>
+                \[
+                    \int e^{f(x)}f'(x) \,\, dx = e^{f(x)} + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int sin(f(x))f'(x) \,\, dx = -cos(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int cos(f(x))f'(x) \,\, dx = sin(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{1}{cos^2(f(x))}f'(x) \,\, dx = tan(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{1}{sin^2(f(x))}f'(x) \,\, dx = -cotan(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{f'(x)}{\sqrt{1 -f(x)^2}} \,\, dx = arcsin(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{f'(x)}{1 + f(x)^2} \,\, dx = arctan(f(x)) 
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        ⚠️⚠️⚠️⚠️
+        Le seguenti coppie di esercizi sono strutturate in questo modo: il primo primo integrale
+        è corredato di video spiegazione; il secondo è <b>estremamente simile</b> al precedente, 
+        in modo che possiate mettere in atto gli stessi ragionamenti con calcoli differenti.
+    </div>
+    <br>
+    <br>
+    <div class="grayBorder">
+        <ul>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int (15x^2 +7) \cdot cos(5x^3 + 7x + 1) dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        sin(5x^3 + 7x + 1) + c
+                    \]
+                </div>  
+                <div class="gray">
+                    <b>Svolgimento:</b> 
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/GB2cH5WGVxA?si=MgazmsdUTEU5m8sD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>    
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int (4x - 5) \, sin(2x^2 - 5x + 3) dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        -cos(2x^2 -5x + 3) + c
+                    \]
+                </div>                
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="grayBorder">
+        <ul>        
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int 6x \cdot (3x^2 + 1)^2 dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        \dfrac{(3x + 1)^3}{3} + c
+                    \]
+                </div>  
+                <div class="gray">
+                    <b>Svolgimento:</b> 
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/T5cuu5ICQaA?si=o40n6c5B30tbSn0t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>    
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int (2x - 1) \dot (x^2 - x)^3 dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        \dfrac{(x^2 - x)^4}{4}+ c
+                    \]
+                </div>  
+            </li> 
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="grayBorder">
+        <ul>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int \dfrac{8x^3}{2x^4 + 1} dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        ln(2x^4 + 1) + c
+                    \]
+                </div>  
+                <div class="gray">
+                    <b>Svolgimento:</b> 
+                    <br>
+                    <iframe style="width: 100%" src="https://www.youtube.com/embed/XE9pKUIzpQo?si=3pzSMVDm4qxUS403" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>    
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int \dfrac{-2sin(x)}{2cos(x) + 37}dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> 
+                    \[
+                        ln(2cos(x) + 37)+ c
+                    \]
+                </div>  
+            </li>     
+        </ul>
+    </div>
+</body>
