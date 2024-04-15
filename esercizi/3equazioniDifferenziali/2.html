@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->
+
+    <h3 class="yellow">Equazioni differenziali a variabili separabili</h3>
+    <div class="esempi-container">
+        Analizziamo una classe di equazioni differenziali detta <i>a variabili separabili</i> che 
+        ammette un procedimento di risoluzione particolarmente semplice.
+        <br>
+        Consideriamo l'equazione 
+        \[
+            \dfrac{y'}{x}  = y^2 \cdot x
+        \]
+        In entrambi i membri compaiono le <b>variabili</b> \(x\) ed \(y\). <b>Separiamole</b>, ovvero 
+        riscriviamo l'equazione in modo che tutte le \(y\) siano a sinistra dell'uguale e tutte le \(x\) a destra.
+        \[
+            \begin{align*}
+                &\dfrac{y'}{x}  = y^2 \cdot x
+                \\\\
+                &\dfrac{y'}{y^2}  = x^2
+            \end{align*}
+        \]
+        La possibilità di porre l'equazione in questa forma dà nome alla tipologia di equazione differenziale.
+        <br>
+        <br>
+        Vediamo come risolverla.
+        <br>
+
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{y'}{y^2}  = x^2
+                    \]
+                </div>
+                <span class="gray">
+
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{y'}{y^2}  = x^2
+                    \]
+                </div>
+                <span class="gray">
+                    Integriamo entrambi i membri in \(dx\)
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \color{red}{}\int\color{black}{} \dfrac{y'}{y^2}\,\,\color{red}{}dx\color{black}{} = \color{red}{}\int\color{black}{}x^2\,\,\color{red}{}dx\color{black}{}
+                    \]
+                </div>
+                <span class="gray">
+                    Integriamo entrambi i membri in \(dx\)
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{y'}{y^2}\,\,dx  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{y'}{y^2}\,\,dx  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Sappiamo che 
+                    \[
+                        y' = \dfrac{dy}{dx}
+                    \]
+                    Moltiplicando entrambi i membri per \(dx\) otteniamo 
+                    \[
+                        y'\,dx = dy
+                    \]
+                    Effettuiamo questa sostituzione nell'integrale al primo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{\color{red}{}y'}{y^2}\,\,\color{red}{}dx\color{black}{}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Sappiamo che 
+                    \[
+                        y' = \dfrac{dy}{dx}
+                    \]
+                    Moltiplicando entrambi i membri per \(dx\) otteniamo 
+                    \[
+                        y'\,dx = dy
+                    \]
+                    Effettuiamo questa sostituzione nell'integrale al primo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{y'}{y^2}\,\,dx  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Sappiamo che 
+                    \[
+                        y' = \dfrac{dy}{dx}
+                    \]
+                    Moltiplicando entrambi i membri per \(dx\) otteniamo 
+                    \[
+                        \color{red}{}y'\,dx\color{gray}{} = dy
+                    \]
+                    Effettuiamo questa sostituzione nell'integrale al primo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{y'}{y^2}\,\,dx  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Sappiamo che 
+                    \[
+                        y' = \dfrac{dy}{dx}
+                    \]
+                    Moltiplicando entrambi i membri per \(dx\) otteniamo 
+                    \[
+                        y'\,dx = \color{red}{}dy
+                    \]
+                    Effettuiamo questa sostituzione nell'integrale al primo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{y^2}\,\,\color{red}{}dy\color{black}{}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Sappiamo che 
+                    \[
+                        y' = \dfrac{dy}{dx}
+                    \]
+                    Moltiplicando entrambi i membri per \(dx\) otteniamo 
+                    \[
+                        y'\,dx = dy
+                    \]
+                    Effettuiamo questa sostituzione nell'integrale al primo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{y^2}\,\,dy  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{y^2}\,\,dy  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al primo membro
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{y^{\color{red}{}2}}\,\,dy  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al primo membro
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int y^{\color{red}{}-2}\,\,dy  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al primo membro
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \color{red}{}\int \color{black}{} y^{-2}\,\,\color{red}{}dy\color{black}{}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al primo membro
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{y^{-1}}{-1}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al primo membro
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{y^{-1}}{\color{red}{}-1}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \color{red}{}-\color{black}{}y^{-1}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\color{black}{}y^{\color{red}{}-1}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \int x^2 \,\,dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al secondo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \color{red}{}\int\color{black}{} x^2 \,\,\color{red}{}dx
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al secondo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \dfrac{x^3}{3} + c
+                    \]
+                </div>
+                <span class="gray">
+                    Svolgiamo l'integrale al secondo membro.
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \dfrac{x^3 + 3c}{3}
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{y}  = \dfrac{x^3 + 3c}{3}
+                    \]
+                </div>
+                <span class="gray">
+                    Isoliamo la \(y\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        -\dfrac{1}{\color{red}{}y}  = \dfrac{x^3 + 3c}{\color{blue}{}3}
+                    \]
+                </div>
+                <span class="gray">
+                    Isoliamo la \(y\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        - \color{blue}{}3\color{black}{}  = (x^3 + 3c)\,\,\color{red}{}y
+                    \]
+                </div>
+                <span class="gray">
+                    Isoliamo la \(y\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{3}{x^3 + 3c}  = y
+                    \]
+                </div>
+                <span class="gray">
+                    Isoliamo la \(y\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        y = \dfrac{3}{x^3 + 3c}
+                    \]
+                </div>
+                <span class="gray">
+                    Isoliamo la \(y\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        y = \dfrac{3}{x^3 + 3c}
+                    \]
+                </div>
+                <span class="gray">
+                    Il valore della costante \(c\) lo possiamo scegliere come vogliamo.
+                    <br>
+                    Di conseguenza il valore \(3c\) potrà assumere un valore a nostro piacere. 
+                    <br>
+                    Possiamo etichettarlo con una nuova lettera, \(k\) ad esempio, ed effettuare direttamente la scelta del valore di \(k\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        y = \dfrac{3}{x^3 + \color{red}{}3c}
+                    \]
+                </div>
+                <span class="gray">
+                    Il valore della costante \(c\) lo possiamo scegliere come vogliamo.
+                    <br>
+                    Di conseguenza il valore \(3c\) potrà assumere un valore a nostro piacere. 
+                    <br>
+                    Possiamo etichettarlo con una nuova lettera, \(k\) ad esempio, ed effettuare direttamente la scelta del valore di \(k\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        y = \dfrac{3}{x^3 + \color{red}{}k}
+                    \]
+                </div>
+                <span class="gray">
+                    Il valore della costante \(c\) lo possiamo scegliere come vogliamo.
+                    <br>
+                    Di conseguenza il valore \(3c\) potrà assumere un valore a nostro piacere. 
+                    <br>
+                    Possiamo etichettarlo con una nuova lettera, \(k\) ad esempio, ed effettuare direttamente la scelta del valore di \(k\).
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        y = \dfrac{3}{x^3 + k}
+                    \]
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>        
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+
+        <br>
+        <br>
+
+        Le soluzioni dell'equazioni differenziale sono le funzioni 
+        \[
+            y = \dfrac{3}{x^3 + k} 
+        \]
+        con \(k \in \mathbb{R}\)
+
+        <br>
+        <br>
+
+        Riassumiamo il procedimento di risoluzione delle equazioni a variabili separabili:
+
+        <br>
+        <br>
+        <br>
+
+        <b>Procedimento di risoluzione</b>
+        <div class="grayBorder">
+            <ul>
+                <li>
+                    Separiamo le variabili.
+                </li>
+                <br>
+                <li>
+                    Integriamo entrambi i membri in \(dx\).
+                </li>
+                <br>
+                <li>
+                    Effettuiamo la sostituizione \(dy = y'\,dx\).
+                </li>
+                <br>
+                <li>
+                    Risolviamo gli integrali al primo e secondo membro.
+                </li>
+                <br>
+                <li>
+                    Isoliamo la \(y\).
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>    
+    <div>
+        Ripassare gli <b>integrali con primitiva composta</b>. Il materiale per il ripasso 
+        è definito <a href="../2integrali/6.html">QUI</a> e <a href="../2integrali/7.html">QUI</a>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>    
+    <ul>    
+        <li>
+            Ripassare l'esercizio guida 58 a pag. 1637 del volume 5A
+        </li>    
+        <br>
+        <li>
+            Svolgere gli esercizi n° 63, 64 a pag. 1637 del volume 5A
+        </li>
+        
+    </ul>
+
+    <br>
+    <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    
+</body>
