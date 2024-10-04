@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>            
+
+    <h3 class="yellow">Derivate fondamentali</h3>    
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \(\left(ln(x)\right)' = \dfrac{1}{x}\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(e^x\right)' = e^x\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(sin(x)\right)' = cos(x)\,\,\,\,\)
+            </li>    
+            <br>
+            <li>
+                \(\left(cos(x)\right)' = -sin(x)\,\,\,\,\)
+            </li>
+            
+            <br>
+            <li>
+                \(\left(b\right)' = 0\,\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(x^{\alpha}\right)' = \alpha\,x^{\alpha - 1}\,\,\,\) con \(\alpha \in \mathbb{R}\,\,\,\,\,\)
+            </li>      
+            <br>
+            <li>
+                \(
+                    \begin{align*}
+                        \left(tan(x)\right)' &= \dfrac{1}{cos^2(x)}
+                        \\\\
+                        &= 1 + tan^2(x)
+                    \end{align*}\,\,\,\,
+                \)
+            </li>    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di derivazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \(\left(c\,f(x)\right)' = c\,f'(x)\)
+            </li>
+            <br>
+            <li>
+                \(\left(f(x) + g(x)\right)' = f'(x) + g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Regola di Leibniz</b> 🔥
+                <br>
+                <br>
+                \(\left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Derivata del rapporto di due funzioni</b> 🔥
+                <br>
+                <br>
+                \(\left(\dfrac{f(x)}{g(x)}\right)' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\big[g(x)\big]^2}\)
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <div>
+        \[
+            \left(\dfrac{2}{x^2} - 5x^2\right)'
+        \]
+    </div>
+
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <div id="slide-container3" class="slide-container grayBorder">
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                \left(\dfrac{2}{x^2}\right)' = 
+            \]
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                \left(\dfrac{2}{x^2}\right)' = 
+            \]            
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                \left(\dfrac{2}{x^2}\right)' = 
+            \]
+
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                \left(\dfrac{\color{red}{}2\color{black}{}}{x^2}\right)' = 
+            \]
+
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                \color{red}{}2\color{black}{}\left(\dfrac{1}{x^2}\right)' = 
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa dal segno di derivazione.
+            </div>
+        </div> 
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(\dfrac{1}{x^2}\right)' = \color{red}{}2\color{black}{}
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa dal segno di derivazione.
+            </div>
+        </div>        
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(\dfrac{1}{x^2}\right)' = 2
+            \]
+            <div class="gray">
+                Scriviamo il termine da derivare in forma di potenza.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(\color{red}{}\dfrac{1}{x^2}\color{black}{}\right)' = 2
+            \]
+            <div class="gray">
+                Scriviamo il termine da derivare in forma di potenza.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(\color{red}{}x^{-2}\color{black}{}\right)' = 2
+            \]
+            <div class="gray">
+                Scriviamo il termine da derivare in forma di potenza.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{-2}\right)' = 2
+            \]
+            <div class="gray">
+            Deriviamolo.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{\color{red}{}-2\color{black}{}}\right)' = 2
+            \]
+            <div class="gray">
+            Deriviamolo.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = 2\big(\color{red}{}-2\color{black}{}x^{\color{red}{}-2\color{black}{}-1}\big)
+            \]
+            <div class="gray">
+            Deriviamolo.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = 2\big(-2x^{-3}\big)
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = \color{red}{}2\color{black}{}\big(\color{red}{}-2\color{black}{}x^{-3}\big)
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = \color{red}{}-4\color{black}{}x^{-3}
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = -4x^{\color{red}{}-\color{black}{}3}
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = -4\dfrac{1}{x^3}
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = -\dfrac{4}{x^3}
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = 
+            \]
+            Derviamo il primo addendo.
+            \[
+                2\left(x^{2}\right)' = \color{blue}{}-\dfrac{4}{x^3}
+            \]
+            <div class="gray">
+            
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = \color{blue}{}-\dfrac{4}{x^3}
+            \]            
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                \left(-5x^2\right)' =
+            \]
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                \left(-5x^2\right)' =
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa da segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                \left(\color{red}{}-5\color{black}{}x^2\right)' =
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa da segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                \color{red}{}-5\color{black}{}\left(x^2\right)' =
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa da segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^2\right)' = \color{red}{}-5\color{black}{}
+            \]
+            <div class="gray">
+                Facciamo uscire la costante moltiplicativa da segno di derivazione.
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^2\right)' = -5
+            \]
+            <div class="gray">
+                Deriviamo \(x^2\).
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{\color{red}{}2\color{black}{}}\right)' = -5
+            \]
+            <div class="gray">
+                Deriviamo \(x^2\).
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{2}\right)' = -5 \big(\color{red}{}2\color{black}{}x^{\color{red}{}2\color{black}{} - 1}\big)
+            \]
+            <div class="gray">
+                Deriviamo \(x^2\).
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{2}\right)' = -5 \big(2x^{1}\big)
+            \]
+            <div class="gray">
+                Deriviamo \(x^2\).
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{2}\right)' = \color{red}{}-5\color{black}{} \big(\color{red}{}2 \color{black}{}x\big)
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{2}\right)' = \color{red}{}-10\color{black}{}x
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3}
+            \]  
+            Derviamo il secondo addendo.
+            \[
+                -5\left(x^{2}\right)' = \color{blue}{}-10x
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3} \color{blue}{}-10x
+            \]              
+        </div>
+        <div class="slide3 formula">
+            \[
+                \left(\dfrac{2}{x^2} - 5x^2\right)' = -\dfrac{4}{x^3} -10x
+            \]              
+        </div>
+        
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+        <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+    </div> 
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 2</h3>
+    <div>
+        \[
+            \left(x^2 \cdot e^x\right)'
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, x\,e^x\,(x + 2)\)
+    </div>
+
+    <br>
+    <br>
+
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <div id="slide-container1" class="slide-container grayBorder">
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' =
+            \]
+        </div>
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 
+            \]
+            <div class="gray">
+                Usiamo la regola di Leibniz per derivare questo prodotto di funzioni.
+                \[
+                    \left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)
+                \]
+            </div>
+        </div> 
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 
+            \]
+            <div class="gray">
+                Deriviamo il primo fattore.
+            </div>
+        </div>  
+        <div class="slide1">
+            \[
+                \left(\color{blue}{}x^2\color{black}{} \cdot e^x\right)' = 
+            \]
+            <div class="gray">
+                Deriviamo il primo fattore.
+            </div>
+        </div>                
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = \color{blue}{}2x\color{black}{}
+            \]
+            <div class="gray">
+                Deriviamo il primo fattore.
+            </div>
+        </div>   
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2x
+            \]
+            <div class="gray">
+                Copiamo il secondo fattore così com'è.
+            </div>
+        </div>        
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot \color{blue}{}e^x\color{black}{}\right)' = 2x
+            \]
+            <div class="gray">
+                Copiamo il secondo fattore così com'è.
+            </div>
+        </div>        
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2x\color{blue}{}e^x\color{black}{}
+            \]
+            <div class="gray">
+                Copiamo il secondo fattore così com'è.
+            </div>
+        </div>  
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x
+            \]
+            <div class="gray">
+                
+            </div>
+        </div> 
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x + 
+            \]
+            <div class="gray">
+                
+            </div>
+        </div> 
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x +
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div> 
+        <div class="slide1">
+            \[
+                \left(\color{blue}{}x^2\color{black}{} \cdot e^x\right)' = 2xe^x +
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div>  
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x + \color{blue}{}x^2\color{black}{}
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div>   
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x + x^2
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div>  
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot \color{blue}{}e^x\color{black}{}\right)' = 2xe^x + x^2
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div> 
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x + x^2\color{blue}{}e^x\color{black}{}
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div>                
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2xe^x + x^2e^x
+            \]            
+            <div class="gray">
+                Ora possiamo mettere in evidenza i fattori comuni ai due addendi.
+            </div>
+        </div>
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = 2\color{red}{}xe^x\color{black}{} + \color{red}{}x\color{black}{}^2\color{red}{}e^x
+            \]            
+            <div class="gray">
+                Ora possiamo mettere in evidenza i fattori comuni ai due addendi.
+            </div>
+        </div>
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = \color{red}{}xe^x\color{black}{}(2 + x)
+            \]            
+            <div class="gray">
+                Ora possiamo mettere in evidenza i fattori comuni ai due addendi.
+            </div>
+        </div>
+        <div class="slide1">
+            \[
+                \left(x^2 \cdot e^x\right)' = xe^x(2 + x)
+            \]            
+            
+        </div>
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+        <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio 4</h3>
+    <div>
+        \[
+            \left(2\,sin(x)\,cos(x)\right)'
+        \]
+    </div>
+    
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, 2cos^2(x) + 2sin^2(x)\)
+    </div>
+
+    <br>
+
+    <b class="gray">Svolgimento</b>
+    <br>
+    <div id="slide-container2" class="slide-container grayBorder">
+        <div class="slide2 formula">
+            \[
+                \left(2\,sin(x)\,cos(x)\right)' =
+            \]
+        </div>
+        <div class="slide2 formula">
+            \[
+                \left(2\,sin(x)\,cos(x)\right)' =
+            \]
+            <div class="gray">
+                Portiamo la costante moltiplicativa fuori dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                \left(\color{blue}{}2\color{black}{}\,sin(x)\,cos(x)\right)' =
+            \]
+            <div class="gray">
+                Portiamo la costante moltiplicativa fuori dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                \color{blue}{}2\color{black}{}\,\left(sin(x)\,cos(x)\right)' =
+            \]
+            <div class="gray">
+                Portiamo la costante moltiplicativa fuori dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = \color{blue}{}2\color{black}{}\,
+            \]
+            <div class="gray">
+                Portiamo la costante moltiplicativa fuori dal segno di derivazione.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[
+            \]
+            <div class="gray">
+                Usiamo la regola di Leibniz per svolgere la derivata del prodotto in parentesi.
+                \[
+                    \left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)
+                \]
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[
+            \]
+            <div class="gray">
+                Deriviamo il primo termine.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(\color{blue}{}sin(x)\color{black}{}\,cos(x)\right)' = 2\big[
+            \]
+            <div class="gray">
+                Deriviamo il primo termine.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{blue}{}cos(x)\color{black}{}
+            \]
+            <div class="gray">
+                Deriviamo il primo termine.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos(x)
+            \]
+            <div class="gray">
+                Copiamo il secondo termine così com'è.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,\color{blue}{}cos(x)\color{black}{}\right)' = 2\big[cos(x)
+            \]
+            <div class="gray">
+                Deriviamo il primo termine.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos(x) \cdot \color{blue}{}cos(x)\color{black}{}
+            \]
+            <div class="gray">
+                Deriviamo il primo termine.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{red}{}cos(x) \cdot cos(x)\color{black}{}
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[\color{red}{}cos^{2}(x)
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) +
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + 
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(\color{blue}{}sin(x)\color{black}{}\,cos(x)\right)' = 2\big[cos^{2}(x) +
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + \color{blue}{}sin(x)\color{black}{}
+            \]
+            <div class="gray">
+                Copiamo il primo fattore così com'è.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + sin(x)
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,\color{blue}{}cos(x)\color{black}{}\right)' = 2\big[cos^{2}(x) + sin(x)
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) + sin(x)\color{blue}{}(-sin(x))\color{black}{}
+            \]
+            <div class="gray">
+                Deriviamo il secondo fattore.
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) \color{red}{}+\color{black}{} sin(x)(\color{red}{}-\color{black}{}sin(x))
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) \color{red}{}-\color{black}{} sin(x)sin(x)
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - \color{red}{}sin(x)sin(x)
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - \color{red}{}sin^2(x)
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        <div class="slide2 formula">
+            \[
+                2\left(sin(x)\,cos(x)\right)' = 2\big[cos^{2}(x) - sin^2(x)\big]
+            \]
+            <div class="gray">
+                
+            </div>
+        </div>
+        
+    </div>
+    <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+        <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+        <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+    </div> 
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio 3</h3>
+    <div>
+        \[
+            \left(\dfrac{x}{ln(x)}\right)'
+        \]
+    </div>
+    
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, \dfrac{ln(x) - 1}{ln^2(x)}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 4</h3>
+    <div>
+        \[
+            \left(\dfrac{x^3}{cos(x)}\right)'
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, \dfrac{x^2 \cdot (3\,cos(x) - x\,sin(x))}{cos^2(x)}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio 5</h3>
+    <div>
+        \[
+            \left(x + \dfrac{2\,ln(x)}{x^2}\right)'
+        \]
+    </div>
+
+    <br>
+    
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, 1 + \dfrac{2\,(1 - 2\,ln(x))}{x^3}\)
+    </div>
+
+    <br>
+    <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
