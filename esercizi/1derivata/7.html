@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>            
+
+    <h3 class="yellow">Derivate fondamentali</h3>    
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \(\left(ln(x)\right)' = \dfrac{1}{x}\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(e^x\right)' = e^x\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(sin(x)\right)' = cos(x)\,\,\,\,\)
+            </li>    
+            <br>
+            <li>
+                \(\left(cos(x)\right)' = -sin(x)\,\,\,\,\)
+            </li>
+            
+            <br>
+            <li>
+                \(\left(b\right)' = 0\,\,\,\,\,\)
+            </li>
+            <br>
+            <li>
+                \(\left(x^{\alpha}\right)' = \alpha\,x^{\alpha - 1}\,\,\,\) con \(\alpha \in \mathbb{R}\,\,\,\,\,\)
+            </li>      
+            <br>
+            <li>
+                \(
+                    \begin{align*}
+                        \left(tan(x)\right)' &= \dfrac{1}{cos^2(x)}
+                        \\\\
+                        &= 1 + tan^2(x)
+                    \end{align*}\,\,\,\,
+                \)
+            </li>    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di derivazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \(\left(c\,f(x)\right)' = c\,f'(x)\)
+            </li>
+            <br>
+            <li>
+                \(\left(f(x) + g(x)\right)' = f'(x) + g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Regola di Leibniz</b> 
+                <br>
+                <br>
+                \(\left(f(x) \cdot g(x)\right)' = f'(x)\,g(x) + f(x)\,g'(x)\)
+            </li>
+            <br>
+            <li>
+                <b>Derivata del rapporto di due funzioni</b> 
+                <br>
+                <br>
+                \(\left(\dfrac{f(x)}{g(x)}\right)' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\big[g(x)\big]^2}\)
+            </li>
+            <br>
+            <li>
+                <b>Derivata di una funzione composta</b> 🔥
+                <br>
+                <br>
+                \(\left(f(g(x))\right)' = f'(x) \cdot g'(x)\)
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <div>
+        Consideriamo le funzioni 
+        \[
+            f(x) = ln(x + 1) + 2x \qquad g(x) = x^2
+        \]
+        Calcolare 
+        \[
+            f(g(x)) \qquad \text{e} \qquad g(f(x))
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \[
+            \begin{align*}
+                f(g(x)) = ln\left(x^2 + 1\right) + 2x^2
+                \\\\
+                g(f(x)) = \left[ln(x + 1) + 2x\right]^2
+            \end{align*}
+        \]
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <div>
+        Consideriamo le funzioni 
+        \[
+            f(x) = \dfrac{3x + 2}{x} \qquad g(x) = cos(x)
+        \]
+        Calcolare 
+        \[
+            f(g(x)) \qquad \text{e} \qquad g(f(x))
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \[
+            \begin{align*}
+                f(g(x)) = \dfrac{3cos(x) + 2}{cos(x)}
+                \\\\
+                g(f(x)) = cos\left(\dfrac{3x + 2}{x}\right)
+            \end{align*}
+        \]
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 3</h3>
+    <div>
+        \[
+            \left[ln\left(3x - 1\right)\right]'
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, \dfrac{3}{3x - 1}\)
+    </div>
+
+    <br>
+    <br>    
+
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/ZZZk7nzPUDU?si=vn3a4xDgmfxnhQSt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 4</h3>
+    <div>
+        \[
+            \left[2cos\left(-3x^2 -6\right)\right]'
+        \]
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>: \(\,\,\, 12x\,sin(-3x^2 -6)\)
+    </div>
+
+    <br>
+    <br>
+
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q8eZ3E-3Ap0?si=mhf-GEoK14SldbE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
