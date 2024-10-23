@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>            
+
+    <div class="gray">
+        ⚠️⚠️⚠️ Prima di andare avanti un ripasso. Cosa abbiamo fatto fino ad ora? In questa e nella <a class="gray" href="9.html">precedente</a> scheda per ciascun argomento  
+        trovate un esercizio svolto ed uno da svolgere.
+    </div>
+
+    <br>
+    <br>
+    
+
+    <h3 class="yellow">Definizione di derivata</h3>
+    <div class="esempi-container">
+        <b>Come spiegarlo durnate l'interrogazione</b>
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale alla derivata di \(f\) per \(g\) meno 
+                \(f\) per la derivata di \(g\) il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \color{blue}{}\left[\dfrac{f(x)}{g(x)}\right]'\color{black}{} = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                <span style="color: blue;">La derivata del rapporto tra funzioni</span> è uguale alla derivata di \(f\) per \(g\) meno 
+                \(f\) per la derivata di \(g\) il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' \color{blue}{}=\color{black}{} \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni <span style="color: blue;">è uguale</span> alla derivata di \(f\) per \(g\) meno 
+                \(f\) per la derivata di \(g\) il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{\color{blue}{}f'(x)\,g(x)\color{black}{} - f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale <span style="color: blue;">alla derivata di \(f\) per \(g\)</span> meno 
+                \(f\) per la derivata di \(g\) il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{f'(x)\,g(x) \color{blue}{}-\color{black}{} f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale alla derivata di \(f\) per \(g\) <span style="color: blue;">meno</span> 
+                \(f\) per la derivata di \(g\) il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{f'(x)\,g(x) - \color{blue}{}f(x)\,g'(x)}{\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale alla derivata di \(f\) per \(g\) meno
+                <span style="color: blue;">\(f\) per la derivata di \(g\)</span> il tutto fratto il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \color{blue}{}\dfrac{\color{black}{}f'(x)\,g(x) - f(x)\,g'(x)}{\color{black}{}\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale alla derivata di \(f\) per \(g\) meno
+                \(f\) per la derivata di \(g\) <span style="color: blue;">il tutto fratto</span> il quadrato di \(g\).
+            </div>
+            <div class="slide1 formula">
+                \[
+                    \left[\dfrac{f(x)}{g(x)}\right]' = \dfrac{f'(x)\,g(x) - f(x)\,g'(x)}{\color{blue}{}\left[g(x)\right]^2}
+                \]  
+                La derivata del rapporto tra funzioni è uguale alla derivata di \(f\) per \(g\) meno
+                \(f\) per la derivata di \(g\) il tutto fratto <span style="color: blue;">il quadrato di \(g\)</span>.
+            </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <h3 class="green">Esercizio guida</h3>
+        <div id="slide-container2" class="slide-container grayBorder">
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = 
+                \]                  
+            </div>   
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{\color{transparent}{}cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    \(\,\)
+                </div>               
+            </div>       
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{\color{transparent}{}cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Derivo il numeratore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{\color{blue}{}sin(x)}{x^2}\right]' = \dfrac{\color{transparent}{}cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Derivo il numeratore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{\color{blue}{}(sin(x))'\color{transparent}{}\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Derivo il numeratore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{\color{blue}{}cos(x)\color{transparent}{}\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Derivo il numeratore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\color{transparent}{}\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Moltiplico per il denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{\color{blue}{}x^2}\right]' = \dfrac{cos(x)\color{transparent}{}\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Moltiplico per il denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\color{blue}{}\cdot x^2\color{transparent}{} - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Moltiplico per il denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 \color{red}{}- \color{transparent}{}sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    \(\,\)
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - \color{transparent}{}sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Riporto il numeratore così com'è.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{\color{blue}{}sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - \color{transparent}{}sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Riporto il numeratore così com'è.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - \color{blue}{}sin(x)\color{transparent}{}\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Riporto il numeratore così com'è.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\color{transparent}{}\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    E lo moltiplico per la derivata del denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{\color{blue}{}x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\color{transparent}{}\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    E lo moltiplico per la derivata del denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\color{blue}{}\cdot (x^2)'}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    E lo moltiplico per la derivata del denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\color{blue}{}\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    E lo moltiplico per la derivata del denominatore.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Al denominatore del risultato scrivo il quadrato del denominatore della frazione.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{\color{blue}{}x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{transparent}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Al denominatore del risultato scrivo il quadrato del denominatore della frazione.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{blue}{}(x^2)^2}
+                \]   
+                <div class="gray">
+                    Al denominatore del risultato scrivo il quadrato del denominatore della frazione.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\cdot 2x}{\color{blue}{}x^4}
+                \]   
+                <div class="gray">
+                    Al denominatore del risultato scrivo il quadrato del denominatore della frazione.
+                </div>               
+            </div>
+            <div class="slide2 formula">
+                \[
+                    \left[\dfrac{sin(x)}{x^2}\right]' = \dfrac{cos(x)\cdot x^2 - sin(x)\cdot 2x}{x^4}
+                \]   
+                <div class="gray">
+                    \(\)
+                </div>               
+            </div>
+            
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+            <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+        </div>   
+
+        <br>
+        <br>
+        <br>
+
+        <h3 class="green">Esercizio guida</h3>
+        <div id="slide-container3" class="slide-container grayBorder">
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \color{transparent}{}\dfrac{(3x^2)' \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{(2x + 1)^2}
+                \]              
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{transparent}{}(3x^2)' \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    \(\)
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{transparent}{}(3x^2)' \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Deriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{\color{blue}{}3x^2}{2x + 1}\right)'  = \dfrac{\color{transparent}{}(3x^2)' \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Deriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}(3x^2)'\color{transparent}{} \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Deriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}3 \cdot 2x\color{transparent}{} \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Deriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}6x\color{transparent}{} \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Deriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x\color{transparent}{} \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Moltiplichiamo per il denominatore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{\color{blue}{}2x + 1}\right)'  = \dfrac{6x\color{transparent}{} \cdot (2x + 1) - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Moltiplichiamo per il denominatore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \color{blue}{}\cdot (2x + 1)\color{transparent}{} - 3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Moltiplichiamo per il denominatore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) \color{red}{}- \color{transparent}{}3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - \color{transparent}{}3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Scriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{\color{blue}{}3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - \color{transparent}{}3x^2 \cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Scriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - \color{blue}{}3x^2 \color{transparent}{}\cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Scriviamo il numeratore.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \color{transparent}{}\cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    E la moltiplichiamo per la derivata del denominatore. 
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{\color{blue}{}2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \color{transparent}{}\cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    E la moltiplichiamo per la derivata del denominatore. 
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \color{blue}{}\cdot (2x + 1)'}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    E la moltiplichiamo per la derivata del denominatore. 
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \color{blue}{}\cdot 2}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    E la moltiplichiamo per la derivata del denominatore. 
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \cdot 2}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    E la moltiplichiamo per la derivata del denominatore. 
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \cdot 2}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Al denominatore del risultato scriviamo il quadrato del denominatore della frazione.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{\color{blue}{}2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \cdot 2}{\color{transparent}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Al denominatore del risultato scriviamo il quadrato del denominatore della frazione.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \cdot 2}{\color{blue}{}(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Al denominatore del risultato scriviamo il quadrato del denominatore della frazione.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x \cdot (2x + 1) - 3x^2 \cdot 2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}6x \cdot (2x + 1)\color{black}{} - 3x^2 \cdot 2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}12x^2 + 6x\color{black}{} - 3x^2 \cdot 2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{12x^2 + 6x - \color{blue}{}3x^2 \cdot 2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{12x^2 + 6x - \color{blue}{}6x^2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}12x^2\color{black}{} + 6x - \color{blue}{}6x^2}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}6x^2\color{black}{} + 6x}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}6x\color{black}{}^2 + \color{blue}{}6x}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{\color{blue}{}6x\color{black}{} \left(x + 1\right)}{(2x + 1)^2}
+                \]              
+                <div class="gray">
+                    Ora che abbiamo finito di applicare la formula di derivazione sistemiamo i calcoli al numeratore. 
+                    Il denominatore lo lasciamo così com'è.
+                </div>
+            </div>
+            <div class="slide3 formula">
+                \[
+                    \left(\dfrac{3x^2}{2x + 1}\right)'  = \dfrac{6x\color{black}{} \left(x + 1\right)}{(2x + 1)^2}
+                \]              
+                <div class="gray">                
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+            <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="yellow">Derivata del rapporto tra due frazioni</h3>
+    <div class="esempi-container">
+        <b>Come spiegarlo durnate l'interrogazione</b>
+        <div id="slide-container4" class="slide-container grayBorder">
+            <div class="slide4 formula">
+                \[
+                    \left[f(g(x))\right]' = f'(g(x)) \cdot g'(x)
+                \]              
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\) valutata in \(g\) per la derivata di \(g\).
+            </div>            
+            <div class="slide4 formula">
+                \[
+                    \color{blue}{}\left[\color{black}{}f(g(x))\color{blue}{}\right]'\color{black}{} = f'(g(x)) \cdot g'(x)
+                \]              
+                <span style="color: blue">La derivata di</span> \(f\) di \(g\) è uguale alla derivata di \(f\) valutata in \(g\) per la derivata di \(g\).
+            </div>        
+            <div class="slide4 formula">
+                \[
+                    \left[\color{blue}{}f(g(x))\color{black}{}\right]' = f'(g(x)) \cdot g'(x)
+                \]              
+                La derivata di <span style="color: blue">\(f\) di \(g\)</span> è uguale alla derivata di \(f\) valutata in \(g\) per la derivata di \(g\).
+            </div>        
+            <div class="slide4 formula">
+                \[
+                    \left[f(g(x))\right]' \color{blue}{}=\color{black}{} f'(g(x)) \cdot g'(x)
+                \]              
+                La derivata di \(f\) di \(g\) <span style="color: blue">è uguale</span> alla derivata di \(f\) valutata in \(g\) per la derivata di \(g\).
+            </div>        
+            <div class="slide4 formula">
+                \[
+                    \left[f(g(x))\right]' = \color{blue}{}f'(\color{black}{}g(x)\color{blue}{})\color{black}{} \cdot g'(x)
+                \]              
+                La derivata di \(f\) di \(g\) è uguale <span style="color: blue">alla derivata di \(f\)</span>  valutata in \(g\) per la derivata di \(g\).
+            </div>            
+            <div class="slide4 formula">
+                \[
+                    \left[f(g(x))\right]' = f'(\color{blue}{}g(x)\color{black}{}) \cdot g'(x)
+                \]              
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\)  <span style="color: blue">valutata in \(g\)</span> per la derivata di \(g\).
+            </div>        
+            <div class="slide4 formula">
+                \[
+                    \left[f(g(x))\right]' = f'(g(x)) \color{blue}{}\cdot g'(x)
+                \]              
+                La derivata di \(f\) di \(g\) è uguale alla derivata di \(f\)  valutata in \(g\) <span style="color: blue">per la derivata di \(g\)</span>.
+            </div>                
+        </div>
+        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button4" onclick="previousSlide(4)">Indietro</button>
+            <button id="nextSlide-button4" onclick="nextSlide(4)">Avanti</button>
+        </div>   
+
+        <br>
+        <br>
+        <br>
+
+        <h3 class="green">Esercizio guida</h3>
+        <div>
+            \[
+                \left[ln\left(3x - 1\right)\right]'
+            \]
+        </div>            
+                        
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/ZZZk7nzPUDU?si=vn3a4xDgmfxnhQSt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <br>
+        <br>
+        <br>        
+        <br>
+    
+        <h3 class="green">Esercizio guida</h3>
+        <div>
+            \[
+                \left[2cos\left(-3x^2 -6\right)\right]'
+            \]
+        </div>
+        
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q8eZ3E-3Ap0?si=mhf-GEoK14SldbE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        
+    </div>
+
+
+    
+    
+    <br>
+    <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    
+</body>
