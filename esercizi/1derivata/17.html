@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+		<script
+			id="MathJax-script"
+			async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+		></script>
+		<script
+			language="javascript"
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"
+		></script>
+		<link rel="stylesheet" href="../../css/style.css" />
+		<title>Compiti per casa</title>
+	</head>
+	<body>
+		<h1>Compiti per casa</h1>
+
+		<br />
+
+		<div class="gray"></div>
+
+		<br />
+		<br />
+		<br />
+
+		<h3 class="green">Esercizio 1</h3>
+		<div>
+			Studiare gli intervalli di monotonia della funzione 
+			\[ 
+				f(x) = \dfrac{x^2 -3x}{5x + 1}
+			\]
+		</div>
+
+		<br />
+
+		<div class="gray">
+			<b>Soluzione:</b>
+			<br />
+			Il dominio della funzione è 
+			\[
+				D = \left(-\infty\,,\,\,-\dfrac{1}{5}\right) \cup \left(-\dfrac{1}{5}\,,\,\,+\infty\right)
+			\]
+			La funzione è
+			<br />
+			<br />
+			<ul>
+				<li>decrescente per \(x \in \left(-1\,,\,\,-\dfrac{1}{5}\right) \cup \left(-\dfrac{1}{5}\,,\,\,\dfrac{3}{5}\right)\)</li>
+				<br />
+				<li>crescente per \(x \in \left(-\infty\,,\,\,-1\right) \cup \left(\dfrac{3}{5}\,,\,\,+\infty\right) \)</li>
+			</ul>
+		</div>
+
+		<br>		
+
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+
+
+		<h3 class="yellow">Dall'Alhambra ad Escher</h3>
+		<div class="esempi-container">
+			Esistono vari esempi nel tempo di matematica che diventa arte. 
+			La Vela di Calatrava (zona Tor Vergata) è un esempio artistico di <a href="https://it.wikipedia.org/wiki/Superficie_rigata">superficie rigata</a>. 
+			<br>
+			<br>
+			<img src="img/17(1).jpg" style="width: 100%;">
+			<br>
+			Un'altra sua opera intitolata "The wave" ha letteralmente la forma di una funzione sinusoidale.
+			<br>
+			<br>
+			<img src="img/17(2).jpg" alt="">
+			<br>
+			<br>
+			<div class="geogebra-container">
+				<div id="geogebra1"></div>
+			</div>
+			<br>
+			<br>
+			Un caso molto particolare è l'Alhambra, un complesso che si trova a Granada, in Spagna.
+			Alcuni dei pattern geometrici usati per decorare gli ambienti sono stati riscoperti da Penrose sette secoli più tardi.
+			Dall'arte alla matematica... per poi tornare all'arte, grazie all'ingegno dell'incisore olandese 
+			Escher.
+			
+			<br>
+			<br>
+			 
+			<iframe style="width: 100%;" src="https://www.youtube.com/embed/q6yBnUKGcbM?si=GxS0vdOOCiF_baG7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		<br />
+		<br />
+
+		<script src="../../js/hintAndSlide.js"></script>
+	</body>
+</html>
+
+<script>
+	let ggbApp1 = new GGBApplet({
+	/* appletOnLoad(api) {
+		api.registerObjectUpdateListener("A","stampaValori2");
+	}, */
+	"appName": "classic", 
+	"id": "gg1",
+	"scaleContainerClass":"geogebra-container",
+	"showToolBar": false, 
+	"showAlgebraInput": false, 
+	"showMenuBar": false, 
+	"enableShiftDragZoom": false,
+	"filename":"img/calatravaVaveRuledSurface.ggb"
+	},
+	true);
+
+	window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+            }
+        )
+</script>
