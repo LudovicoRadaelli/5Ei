@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">            
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Bliblibli blablabla</b>
+            </div>
+            <div class="gray">
+                [Par. 12.2, 12.3, pag. da 668 a 676]
+                <br>
+                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br> -->
+
+
+    <!-- ESERCIZI -->
+
+    
+
+    <h3 class="yellow">Terminologia</h3>
+    <div class="esempi-container">
+        A lezione abbiamo ci siamo posti il problema di trovare tutte le funzioni la cui derivata è una funzione assegnata.
+        <br>
+        Ad esempio abbiamo visto che le funzioni \(f\) che hanno come derivata 
+        \[
+            f'(x) = 3x
+        \]
+        sono della forma
+        \[
+            f(x) = \dfrac{3}{2}x^2 \,+\, c
+        \]
+        dove \(c \in \mathbb{R}\) è un costante arbitraria.
+        <br>
+        Per convenzione chiameremo le funzioni 
+        \[
+            y = \dfrac{3}{2}x^2 \,+\, c
+        \]  
+        <b>primitive</b> della funzione \(y = 3x\).
+        <br>
+        L'operazione inversa della derivata si chiama <b>integrale indefinito</b> e si indica simbolicamento in questo modo
+        \[
+            \underset{\color{gray}{\text{l'integrale di f(x) in dx}}}{\color{gray}{\underbrace{\color{black}{\int f(x) \,\,dx}}}}
+        \]
+        Il \(dx\) che compare in coda alla scrittura si legge "de x".
+        <br>
+        <br>
+        Secondo questa terminologia il problema
+        <br>
+        <br>
+        <div class="grayBorder">
+            Calcolare 
+            \[
+                \int 3x \,\,dx
+            \]
+        </div>        
+        <br>
+        è una maniera sintetica di scrivere il problema
+        <br>
+        <br>
+        <div class="grayBorder">
+            Individuare tutte le funzioni che hanno come derivata la funzione
+            \[
+                y = 3x                
+            \]
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+
+    <h3 class="yellow">Regole di integrazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \[
+                    \int x^{\alpha} \,\,dx = \dfrac{x^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>
+        Svolgere i seguenti integrali indefiniti
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int x^4 \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(\dfrac{x^5}{5} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>
+            <br>
+            <br>
+            <b>Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/R6aAegd_Yq4?si=ciWjs73sgqIQHUgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li> 
+        <br>
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int x^{10} \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(\dfrac{x^{11}}{11} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>
+        </li> 
+        <br>        
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \sqrt[3]{x^2}  \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(\dfrac{3}{5}\,\sqrt[3]{x^5} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>
+            <br>
+            <br>
+            <b>Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/ZMo0eJERFD8?si=UN2NdgKdujanmzet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li> 
+        <br>        
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \sqrt[4]{x^5}  \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(\dfrac{4}{9}\,\sqrt[4]{x^9} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>            
+        </li> 
+        <br>
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \dfrac{1}{x^7} \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(-\dfrac{1}{6x^6} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>
+            <br>
+            <br>
+            <b>Svolgimento</b>
+            <br>
+            <iframe style="width: 100%" src="https://www.youtube.com/embed/3W_c0DbbfQA?si=hdhvZbAmB2-QbdjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li> 
+        <br>
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \dfrac{1}{x^3} \,\,dx
+                \]
+            </div>
+            <div class="gray">
+                <b>Soluzione:</b>
+                <br>
+                \(-\dfrac{1}{2x^2} + c\,\,\,\) con \(c \in \mathbb{R}\)
+            </div>
+        </li> 
+    </ul>
+
+
+    
+
+    <br>
+    <br>
+
+    
+</body>
