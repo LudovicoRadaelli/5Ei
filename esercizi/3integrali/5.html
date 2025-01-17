@@ -13,147 +13,230 @@
 <body>
     <h1>Compiti per casa</h1>
     
-    <br>
-    
-    <!-- ARGOMENTI SVOLTI -->
-    <!-- <section id="argomenti">
-        <h3 class="blue">Argomenti svolti</h3>
-        <div class="grayBorder">            
+    <br>        
 
+    Studiare e memorizzare le seguenti regole di integrazione. 
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di integrazione</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int x^{\alpha} \,\,dx = \dfrac{x^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                    \]
+                </div>
+            </li>
             <br>
-
-            <div style="text-align: left;">
-                <b>2) Bliblibli blablabla</b>
-            </div>
-            <div class="gray">
-                [Par. 12.2, 12.3, pag. da 668 a 676]
-                <br>
-                <a class="gray" href="../../../3/goniometria/index.html">dispense</a>
-            </div>
-        </div>
-
-    </section>
-
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br> -->
-
-
-    <!-- ESERCIZI -->
-
-    <h3 class="yellow">Integrazione per parti</h3>        
-    <div class="esempi-container"> 
-        Scrivo di seguito la formula di integrazione per parti
-        
-        <div class="formula" style="font-size: 1rem;">
-            \[
-                \int \, f'(x) \cdot g(x) \,\, dx = f(x) \cdot g(x) - \int \, f(x) \cdot g'(x) \,\,dx
-            \]
-        </div>
-
-        Questa formula in prima battuta può sembrare oscura. 
-        <br>
-        Dividiamo il lavoro in due parti: per prima cosa vediamo come essa sia "figlia" della formula di Leibniz; 
-        mostriamo successivamente come applicarla dal punto di vista pratico.
-
-        <br>
-        <br>
-
-
-        <b>Dimostrazione della formula</b>
-        <br>
-        <br>
-        ⚠️⚠️WORK IN PROGRESS⚠️⚠️
-        
-        <br>
-        <br>
-
-
-
-        <b>Come applicare la formula</b>
-        <br>
-        <iframe style="width: 100%" src="https://www.youtube.com/embed/_MggheFzp7Q?si=P7uvpdcZU_X415u6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <h3 class="yellow">Integrali fondamentali</h3>
-    <div class="esempi-container" style="max-height: 40vh; overflow-y: scroll;">                    
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int f(x)^{\alpha} \cdot f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
-                \]
-            </div>                                   
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int \dfrac{f'(x)}{f(x)} \,\, dx = ln\left(\left|f(x)\right|\right) + c 
-                \]
-            </div>                                               
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int e^{f(x)}\cdot f'(x) \,\, dx = e^{f(x)} + c
-                \]
-            </div>             
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int a^{f(x)} \cdot f'(x) \,\, dx = \dfrac{a^{f(x)}}{ln(a)} + c
-                \]
-            </div>                                   
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int sin(f(x)) \cdot f'(x) \,\, dx = -cos(f(x)) + c
-                \]
-            </div>                                   
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int cos(f(x)) \cdot f'(x) \,\, dx = sin(f(x)) + c
-                \]
-            </div>                                   
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int \dfrac{f'(x)}{cos^2(f(x))} \,\, dx = tan(f(x)) + c
-                \]
-            </div>                                   
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int \dfrac{f'(x)}{sin^2(f(x))} \,\, dx = -cotan(f(x)) + c
-                \]
-            </div>                                    
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int \dfrac{f'(x)}{\sqrt{1 -f(x)^2}} \,\, dx = arcsin(f(x)) + c
-                \]
-            </div>                                    
-            <div class="formula" style="width: fit-content;">
-                \[
-                    \int \dfrac{f'(x)}{1 + f(x)^2} \,\, dx = arctan(f(x)) + c
-                \]
-            </div>            
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{x} \,\, dx = ln\left(x\right) + c \quad \text{con} \quad x \gt 0
+                    \]
+                </div>
+            </li>
+            <br>            
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int e^{x} \,\, dx = e^{x} + c
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int sin(x) \,\, dx = -cos(x) + c
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int cos(x) \,\, dx = sin(x) + c
+                    \]
+                </div>
+            </li>            
         </ul>
     </div>
 
     <br>
-    <br>
-    <br>
-    <br>
+    <br>    
 
-    <h3 class="green">Esercizio 0</h3>
+    <h3 class="green">Esercizio guida 1</h3>
     <br>
-    <ul>
-        <li>
-            Studiare il materiale disponibile ad inizio pagina.
-        </li>
+    <div class="grayBorder">
+        Svolgiamo il  seguente integrale 
         <br>
-        <li>
-            Studiare il paragrafo <b>Integrazione per parti</b> a pagg. 1939 e 1940.
-        </li>
-    </ul>
+        <br>
+        <div id="slide-container1" class="slide-container grayBorder">
+            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \dfrac{4}{x^2} \, dx  = 
+                    \]                    
+                </div>
+                <span class="gray">
+                    \(\)
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \dfrac{4}{x^2} \, dx  = 
+                    \]                    
+                </div>
+                <span class="gray">
+                    Usiamo la linearità per far uscire la costante moltiplicativa \(4\) dal segno di integrale
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \int \dfrac{\color{red}{}4}{x^2} \, dx  = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la linearità per far uscire la costante moltiplicativa \(4\) dal segno di integrale
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        \color{red}{}4\color{black}{} \,\int \dfrac{1}{x^2} \, dx  = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la linearità per far uscire la costante moltiplicativa \(4\) dal segno di integrale
+                </span>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\color{black}{} \,\int \dfrac{1}{x^2} \, dx  = 
+                    \]
+                </div>
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\int \dfrac{1}{x^{\color{red}{}2}} \, dx  = 
+                    \]
+                </div>
+            </div>
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\int x^{\color{red}{}-2} \, dx  = 
+                    \]
+                </div>
+            </div>          
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\int x^{\color{blue}{}-2} \, dx  = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la regola 
+                    \[
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} + c
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\color{red}{}\int \color{black}{} x^{\color{blue}{}-2} \, \color{red}{}dx\color{black}{}  = <!-- 4\,\dfrac{x^{\color{blue}{}-2\color{black}{}+ 1}}{\color{red}{}-2\color{black}{}+ 1} + c -->
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la regola 
+                    \[
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} + c
+                    \]
+                </span>
+            </div>     
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\dfrac{x^{\color{blue}{}-2\color{black}{} + 1}}{\color{blue}-2 \color{black}{}+ 1}\color{black}{}  = <!-- 4\,\dfrac{x^{\color{blue}{}-2\color{black}{}+ 1}}{\color{red}{}-2\color{black}{}+ 1} + c -->
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la regola 
+                    \[
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} 
+                    \]
+                </span>
+            </div>    
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\dfrac{x^{-2 + 1}}{-2 + 1}  = 
+                    \]
+                </div>
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\)
+                </span>
+            </div>     
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\dfrac{x^{-2 + 1}}{-2 + 1} \color{red}{} + c \color{black}{} = 
+                    \]
+                </div>
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\)
+                </span>
+            </div>     
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        4\,\dfrac{x^{-1}}{-1} + c = 
+                    \]
+                </div>                
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        -4\,x^{-1} + c = 
+                    \]
+                </div>                
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        -4\,x^{\color{red}{}-1} + c = 
+                    \]
+                </div>                
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        -4\,\dfrac{1}{x} + c = 
+                    \]
+                </div>                
+            </div>            
+            <div class="slide1">
+                <div class="formula" style="width: fit-content">
+                    \[
+                        -\dfrac{4}{x} + c
+                    \]
+                </div>                
+            </div>            
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>      
+    </div>
 
     <br>
     <br>
@@ -161,848 +244,466 @@
     <br>
     <br>
     
-    <h3 class="green">Esercizio 1</h3>
+
+
+    <h3 class="green">Esercizio guida 2</h3>
     <br>
-    <ul>
-        <li>
-            Studiare l'esercizio guida nel riquadro verde a pagg. 1971 e 1972.
-        </li>
+    <div class="grayBorder">
+        Svolgiamo il  seguente integrale 
         <br>
-        <li>
-            Svolgere gli eserczi n° 409, 410, 411, 412, 413, 414, 415  a pag. 1972.
-        </li>
-    </ul>
-
-    <br>
-    <br>
-
-    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 410</button>
-    <div id="hint1" class="hint" style="display: none;">     
-        <b class="gray">Svolgimento n° 410</b> 
         <br>
-        <div id="slide-container1" class="slide-container grayBorder">
-            <div class="slide1">           
+        <div id="slide-container2" class="slide-container grayBorder">
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \,\, \dfrac{ln(x)}{x^2} \,dx = 
-                    \]     
+                        \int \dfrac{2}{5}\,\sqrt[3]{x^2}\,dx = 
+                    \]
                 </div>
-            </div>
-            <div class="slide1">           
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \,\, ln(x) \cdot \dfrac{1}{x^2} \,dx = 
-                    \]     
+                        \int \dfrac{2}{5}\,\sqrt[3]{x^2}\,dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la linearità dell'integrale per portare la costante moltiplicativa \(\frac{2}{5}\)
+                    fuori dal segno di integrazione.
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \int \color{red}{}\dfrac{2}{5}\color{black}{}\,\sqrt[3]{x^2}\,dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la linearità dell'integrale per portare la costante moltiplicativa \(\frac{2}{5}\)
+                    fuori dal segno di integrazione.
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \color{red}{}\dfrac{2}{5}\color{black}{} \, \int \sqrt[3]{x^2}\,dx = 
+                    \]
+                </div>
+                <span class="gray">
+                    Usiamo la linearità dell'integrale per portare la costante moltiplicativa \(\frac{2}{5}\)
+                    fuori dal segno di integrazione.
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \int \sqrt[3]{x^2}\,dx = 
+                    \]
                 </div>                
-            </div>
-            <div class="slide1">           
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-                    \]     
+                        \dfrac{2}{5} \, \int \sqrt[\color{red}{}3]{x^{\color{blue}{}2}}\,dx = 
+                    \]
                 </div>                
-            </div>
-			<div class="slide1">           
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-                    \]     
-                </div>
-                <span class="gray">
-                    "Tiriamo" su la funzione \(\dfrac{1}{x^2}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, \dfrac{1}{x^2} \, dx = \int \, x^{-2} \, dx =\dfrac{x^{-1}}{-1} = -\dfrac{1}{x} = 
-						\]
-					</div>
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\color{red}{}\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-                    \]     
-                </div>
-                <span class="gray">
-                    "Tiriamo" su la funzione \(\dfrac{1}{x^2}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, \dfrac{1}{x^2} \, dx = \int \, x^{-2} \, dx =\dfrac{x^{-1}}{-1} = -\dfrac{1}{x} = 
-						\]
-					</div>
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{\color{red}{}-\dfrac{1}{x}} 
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    "Tiriamo" su la funzione \(\dfrac{1}{x^2}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, \dfrac{1}{x^2} \, dx = \int \, x^{-2} \, dx =\dfrac{x^{-1}}{-1} = -\dfrac{1}{x} = 
-						\]
-					</div>
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} 
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    Riscriviamo il secondo fattore così come è.
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}\color{red}{}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} 
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    Riscriviamo il secondo fattore così come è.
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {\color{red}{}ln(x)}
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    Riscriviamo il secondo fattore così come è.
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, 
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{\color{red}{}-\dfrac{1}{x}} \cdot {ln(x)} - \int \, 
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {\color{red}{}-\dfrac{1}{x}}
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {-\dfrac{1}{x}}
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    "Buttiamo" giù il secondo fattore, ovvero deriviamo \(ln(x)\)
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\color{red}{}\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {-\dfrac{1}{x}}
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    "Buttiamo" giù il secondo fattore, ovvero deriviamo \(ln(x)\)
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {-\dfrac{1}{x}} \cdot {\color{red}{}\dfrac{1}{x}}
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    "Buttiamo" giù il secondo fattore, ovvero deriviamo \(ln(x)\)
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {-\dfrac{1}{x}} \cdot \dfrac{1}{x} \, dx
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-			<div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, {-\dfrac{1}{x^2}} \, dx
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-            <div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \int \, -x^{-2} \, dx
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>   
-            <div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} + \int \, x^{-2} \, dx
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>            
-            <div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} + \dfrac{x^{-1}}{-1} + c
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-            <div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - x^{-1} + c
-						\end{align*}
-                    \]     
-                </div>
-                <span class="gray">
-                    
-                </span>
-            </div>
-            <div class="slide1">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{-\dfrac{1}{x}} \cdot {ln(x)} - \dfrac{1}{x} + c
-						\end{align*}
-                    \]     
+                        \dfrac{2}{5} \, \int x^{\frac{\color{blue}{}2}{\color{red}{}3}}\,dx = 
+                    \]
                 </div>                
-            </div>
-            <div class="slide1">           
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{\color{red}{}-\dfrac{1}{x}} \cdot {ln(x)}  {\color{red}{}-\dfrac{1}{x}} + c
-						\end{align*}
-                    \]     
+                        \dfrac{2}{5} \, \int x^{\color{blue}{}\frac{2}{3}}\,dx = 
+                    \]
                 </div>                
-            </div>
-            <div class="slide1">           
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[                
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} + c
+                    \]
+                </span>
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&{\color{red}{}-\dfrac{1}{x}} \, \left(ln(x) + 1\right) + c
-						\end{align*}
-                    \]     
+                        \dfrac{2}{5} \, \color{red}{}\int\color{black}{} x^{\color{blue}{}\frac{2}{3}}\,\color{red}{}dx\color{black}{} = 
+                    \]
                 </div>                
-            </div>
-            <div class="slide1">           
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[                
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} + c
+                    \]
+                </span>
+            </div>  
+            <div class="slide2">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-							&\int \underset{\downarrow}{{\color{transparent}{}\dfrac{\,}{\,}}ln(x)} \cdot \underset{\boldsymbol{\uparrow}}{\dfrac{1}{x^2}} \,dx =                         
-							\\\\
-							&-\dfrac{1}{x} \, \left(ln(x) + 1\right) + c
-						\end{align*}
-                    \]     
+                        \dfrac{2}{5} \, \dfrac{x^{\color{blue}{}\frac{2}{3}\color{black}{} + 1}}{\color{blue}{}\frac{2}{3}\color{black}{} + 1}  =
+                    \]
                 </div>                
-            </div>
-
-        </div>        
+                <span class="gray">
+                    Applichiamo la regola 
+                    \[                
+                        \int x^{\color{blue}{}\alpha} \,dx = \dfrac{x^{\color{blue}{}\alpha\color{gray}{} + 1}}{\color{blue}{}\alpha\color{gray}{} + 1} + c
+                    \]
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{2}{3} + 1}}{\frac{2}{3} + 1} =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\)
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{2}{3} + 1}}{\frac{2}{3} + 1} \color{red}{} + c \color{black}{} =
+                    \]
+                </div>                                
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\)
+                </span>
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{2}{3} + 1}}{\frac{2}{3} + 1} + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{2 + 3}{3} }}{\frac{2 + 3}{3}} + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{5}{3} }}{\frac{5}{3}} + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{x^{\frac{5}{3} }}{\frac{\color{red}{}5}{\color{blue}{}3}} + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{2}{5} \, \dfrac{\color{blue}{}3}{\color{red}{}5} \, x^{\frac{5}{3} } + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{\color{blue}{}2}{\color{red}{}5} \, \dfrac{\color{blue}{}3}{\color{red}{}5} \, x^{\frac{5}{3} } + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{\color{blue}{}6}{\color{red}{}25}  \, x^{\frac{5}{3} } + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{6}{25}  \, x^{\frac{\color{blue}{}5}{\color{red}{}3} } + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{6}{25}  \, \sqrt[\color{red}{}3]{x^{\color{blue}{}5}} + c =
+                    \]
+                </div>                                
+            </div>  
+            <div class="slide2">
+                <div class="formula" style="width: fit-content;">
+                    \[
+                        \dfrac{6}{25}  \, \sqrt[3]{x^{5}} + c
+                    \]
+                </div>                                
+            </div>  
+        </div>
         <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
-            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
+            <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
         </div>  
     </div>
 
     <br>
     <br>
+    <hr>
+    <br>
+    <br>
 
-    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 415</button>
-    <div id="hint2" class="hint" style="display: none;">     
-        <b class="gray">Svolgimento n° 415</b> 
-        <br>
-        <div id="slide-container2" class="slide-container grayBorder">            
-            <div class="slide2">           
+    
+
+
+    <h3 class="green">Esercizio guida 3</h3>
+    <br>
+    <div class="grayBorder" >
+        <div id="slide-container3" class="slide-container grayBorder">
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \,\, \dfrac{ln(x)}{2\sqrt{x}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
+                        \int \big[3sin(x) - \dfrac{2}{3}cos(x)\big] \, dx =
+                    \]
+                </div>
+            </div>          
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \int \,\, ln(x) \cdot \dfrac{1}{2\sqrt{x}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \int \,\, ln(x) \cdot \dfrac{1}{{\color{red}{}2}\sqrt{x}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       {\color{red}{}\dfrac{1}{2}} \int \,\, ln(x) \cdot \dfrac{1}{\sqrt{x}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       \dfrac{1}{2} \int \,\, ln(x) \cdot \dfrac{1}{{\color{red}{}\sqrt{\color{black}{}x}}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       \dfrac{1}{2} \int \,\, ln(x) \cdot \dfrac{1}{x^{\color{red}{}\frac{1}{2}}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       \dfrac{1}{2} \int \,\, ln(x) \cdot {x^{\color{red}{}-\frac{1}{2}}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       \dfrac{1}{2} \int \,\, ln(x) \cdot {x^{-\frac{1}{2}}} \,dx = 
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                       \begin{align*}
-                            &\dfrac{1}{2} \int \,\, ln(x) \cdot {x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[
-                        \end{align*}
-                    \]     
-                </div>                
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[
-                        \end{align*}                        
-                    \]     
-                </div>     
+                        \int \big[3sin(x) - \dfrac{2}{3}cos(x)\big] \, dx =
+                    \]
+                </div>
                 <span class="gray">
-                    "Tiriamo" su la funzione \(x^{-\frac{1}{2}}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, x^{-\frac{1}{2}} \, dx = \dfrac{x^{-\frac{1}{2} + 1}}{-\frac{1}{2} + 1} = \dfrac{x^{\frac{1}{2}}}{\frac{1}{2}} = 2 \, \sqrt{x}                            
-						\]
-					</div>
-                </span>           
-            </div>
-            <div class="slide2">           
+                    Utilizziamo la linearità dell'integrale.
+                </span>
+            </div>                      
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}   
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\color{red}{}\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[
-                        \end{align*}
-                    \]     
-                </div>     
+                        \int \big[\color{red}{}3sin(x)\color{black}{} - \color{blue}{}\dfrac{2}{3}cos(x)\color{black}{}\big] \, dx =
+                    \]
+                </div>
                 <span class="gray">
-                    "Tiriamo" su la funzione \(x^{-\frac{1}{2}}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, x^{-\frac{1}{2}} \, dx = \dfrac{x^{-\frac{1}{2} + 1}}{-\frac{1}{2} + 1} = \dfrac{x^{\frac{1}{2}}}{\frac{1}{2}} = 2 \, \sqrt{x}
-						\]
-					</div>
-                </span>           
-            </div>
-            <div class="slide2">           
+                    Utilizziamo la linearità dell'integrale.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{\color{red}{}2\sqrt{x}}
-                        \end{align*}
-                    \]     
-                </div>     
+                        \int \color{red}{}3sin(x)\color{black}{}\,dx  - \int \color{blue}{}\dfrac{2}{3}cos(x)\color{black}{} \, dx =
+                    \]
+                </div>
                 <span class="gray">
-                    "Tiriamo" su la funzione \(x^{-\frac{1}{2}}\), ovvero integriamola.
-					<div class="formula">
-						\[						
-							\int \, x^{-\frac{1}{2}} \, dx = \dfrac{x^{-\frac{1}{2} + 1}}{-\frac{1}{2} + 1} = \dfrac{x^{\frac{1}{2}}}{\frac{1}{2}} = 2 \, \sqrt{x}
-						\]
-					</div>
-                </span>           
-            </div>
-            <div class="slide2">           
+                    Utilizziamo la linearità dell'integrale.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{\color{red}{}ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}}
-                        \end{align*}
-                    \]     
-                </div>                     
-            </div>
-            <div class="slide2">           
+                        \int \color{red}{}3\color{black}{}sin(x)\,dx  - \int \color{red}{}\dfrac{2}{3}\color{black}{}cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Utilizziamo la linearità dell'integrale.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, {\color{red}{}ln(x)}
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                    
-                </span>           
-            </div>            
-            <div class="slide2">           
+                        \color{red}{}3\color{black}{} \int sin(x)\,dx  - \color{red}{}\dfrac{2}{3}\color{black}{} \, \int cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Utilizziamo la linearità dell'integrale.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
+                        3 \int sin(x)\,dx  - \dfrac{2}{3}  \int cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
                     
-                </span>           
-            </div>
-            <div class="slide2">           
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{\color{red}{}2\sqrt{x}} \,\, ln(x) - \int
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 \int sin(x)\,dx  - \dfrac{2}{3}  \int cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Risolviamo gli integrali fondamentali attraverso la tabella.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, {\color{red}{}2\sqrt{x}}
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 \color{red}{}\int sin(x)\,dx\color{black}{}  - \dfrac{2}{3}  \int cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Risolviamo gli integrali fondamentali attraverso la tabella.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2\sqrt{x}
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                    "Buttiamo giù" la funzione \(ln(x)\), ovvero deriviamola.
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 \color{red}{}(-cos(x))\color{black}{}  - \dfrac{2}{3}  \int cos(x) \, dx =
+                    \]
+                </div>
+                <span class="gray">
+                    Risolviamo gli integrali fondamentali attraverso la tabella.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\color{red}{}\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2\sqrt{x}
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                    "Buttiamo giù" la funzione \(ln(x)\), ovvero deriviamola.
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 (-cos(x)) - \dfrac{2}{3}  \color{red}{}\int cos(x) \, dx\color{black}{} =
+                    \]
+                </div>
+                <span class="gray">
+                    Risolviamo gli integrali fondamentali attraverso la tabella.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2\sqrt{x} \cdot {\color{red}{}\dfrac{1}{x}}
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                    "Buttiamo giù" la funzione \(ln(x)\), ovvero deriviamola.
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 (-cos(x)) - \dfrac{2}{3}  \color{red}{}sin(x)\color{black}{} =
+                    \]
+                </div>
+                <span class="gray">
+                    Risolviamo gli integrali fondamentali attraverso la tabella.
+                </span>
+            </div>              
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2\sqrt{x} \cdot \dfrac{1}{x} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">   
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 (-cos(x)) - \dfrac{2}{3}  sin(x) =
+                    \]
+                </div>
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\) in coda alle primitive appena trovate.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2x^{\frac{1}{2}} \cdot x^{-1} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                       
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 (-cos(x)) - \dfrac{2}{3}  sin(x) \color{red}{} + c \color{black}{} =
+                    \]
+                </div>
+                <span class="gray">
+                    Aggiungiamo la costante additiva \(c\) in coda alle primitive appena trovate.
+                </span>
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2x^{\frac{1}{2} - 1} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                       
-                </span>           
-            </div>
-            <div class="slide2">           
+                        3 (-cos(x)) - \dfrac{2}{3}  sin(x) + c  =
+                    \]
+                </div>                
+            </div>  
+            <div class="slide3">
                 <div class="formula" style="width: fit-content;">
                     \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2x^{-\frac{1}{2}} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - \int \, 2x^{-\frac{1}{2}} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                       
-                    Risolviamo l'integrale
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - 2 \, \int \, x^{-\frac{1}{2}} \,\,dx\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                       
-                    Risolviamo l'integrale
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - 2\dfrac{x^{-\frac{1}{2} + 1}}{-\frac{1}{2} + 1} + c\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - 2\dfrac{x^{\frac{1}{2}}}{\frac{1}{2}} + c\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - 2\,\dfrac{2}{1}\,x^{\frac{1}{2}} + c\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &\dfrac{1}{2} \Big[{2\sqrt{x}} \,\, ln(x) - 4\,\sqrt{x} + c\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            &{\color{red}{}\dfrac{1}{2}} \Big[{2\sqrt{x}} \,\, ln(x) - 4\,\sqrt{x} + c\Big]
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & {\color{red}{}\dfrac{1}{2}} \, 2\sqrt{x} \,\, ln(x) - {\color{red}{}\dfrac{1}{2}}4\,\sqrt{x} + {\color{red}{}\dfrac{1}{2}}c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & \sqrt{x} \,\, ln(x) - 2\,\sqrt{x} + \dfrac{1}{2}c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                       
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & \sqrt{x} \,\, ln(x) - 2\,\sqrt{x} + c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                                           
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & {\color{red}{}\sqrt{x}} \,\, ln(x) - 2\,{\color{red}{}\sqrt{x}} + c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                                           
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & {\color{red}{}\sqrt{x}} \,\,\left(ln(x) - 2\right) + c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                                           
-                </span>           
-            </div>
-            <div class="slide2">           
-                <div class="formula" style="width: fit-content;">
-                    \[
-                        \begin{align*}
-                            &\dfrac{1}{2} \int \,\, \underset{\downarrow}{ln(x)} \cdot \underset{\uparrow}{x^{-\frac{1}{2}}} \,dx = 
-                            \\\\
-                            & \sqrt{x} \,\,\left(ln(x) - 2\right) + c
-                        \end{align*}
-                    \]     
-                </div>     
-                <span class="gray">                                                           
-                </span>           
-            </div>            
-        </div>        
-        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-            <button id="previousSlide-button2" onclick="previousSlide(2)">Indietro</button>
-            <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
+                        -3cos(x) - \dfrac{2}{3} \, sin(x) + c 
+                    \]
+                </div>
+            </div>                               
         </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button3" onclick="previousSlide(3)">Indietro</button>
+            <button id="nextSlide-button3" onclick="nextSlide(3)">Avanti</button>
+        </div>  
     </div>
-    
 
     <br>
     <br>
+    <hr>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
 
-    
+    <h3 class="green">Esercizio 4</h3>
+    <br>
+    <div>
+        Svolgere i seguenti integrali
+    </div>    
+    <br>
+    <ul>
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int\left(\dfrac{4}{3}x^2 - \sqrt[5]{x^{2}}\right) dx
+                \]
+            </div>
+        </li>
+        <br>
+        <div class="gray">
+            <b>Soluzione:</b> 
+            \[
+                \dfrac{4}{9}x^3 - \dfrac{5}{7}\sqrt[5]{x^{7}} + c
+            \]
+        </div>
+        <br>
 
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \left(5\,sin(x) - 3\,cos(x)\right) dx
+                \]
+            </div>
+        </li>
+        <br>
+        <div class="gray">
+            <b>Soluzione:</b> 
+            \[
+                -5\,cos(x) -3\,sin(x)+ c
+            \]
+        </div>
+        <br>
+        
+        <li>
+            <div style="width: fit-content;">
+                \[
+                    \int \left(\dfrac{3x - 4x^2 + 5x^3}{2x^2}\right) dx
+                \]
+            </div>
+        </li>
+        <br>
+        <div class="gray">
+            <b>Suggerimento:</b> 
+            <br>
+            Prima di tutto distribuite la frazione sugli addendi del numeratore, poi semplificate ciascuna frazione:
+            \[
+                \begin{align*}
+                    \int \left(\dfrac{3x - 4x^2 + 5x^3}{\color{red}{}2x^2}\right) dx =
+                    \\\\
+                    \int \left(\dfrac{3x}{\color{red}{}2x^2} - \dfrac{4x^2}{\color{red}{}2x^2} + \dfrac{5x^3}{\color{red}{}2x^2}\right) dx =
+                    \\\\
+                    \int \left(\dfrac{3\cancel{x}}{2x^{\cancel{2}}} - \dfrac{4\cancel{x^2}}{{}2\cancel{x^2}} + \dfrac{5x^{\cancel{3}}}{2\cancel{x^2}}\right) dx =
+                    \\\\
+                    \int \left(\dfrac{3}{2x} - \dfrac{4}{2} + \dfrac{5x}{2}\right) dx =
+
+                \end{align*}
+            \]
+            Ed ora vai di linearità!
+        </div>  
+        <br>
+        <div class="gray">
+            <b>Soluzione:</b> 
+            \[
+                \dfrac{3}{2}\,ln(x) -2x + \dfrac{5}{4}x^2 + c
+            \]
+        </div>        
+    </ul>
+
+    <br>
+    <br>
 
     <script src="../../js/hintAndSlide.js"></script>
+    
 </body>
