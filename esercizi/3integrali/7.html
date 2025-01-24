@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Integrazione per parti</h3>        
+    <div class="esempi-container"> 
+        Scrivo di seguito la formula di integrazione per parti
+        
+        <div class="formula" style="font-size: 1rem;">
+            \[
+                \int \, f'(x) \cdot g(x) \,\, dx = f(x) \cdot g(x) - \int \, f(x) \cdot g'(x) \,\,dx
+            \]
+        </div>
+
+        Questa formula in prima battuta può sembrare oscura.                 
+        Nel video viene mostrato come applicarla dal punto di vista pratico.
+
+        <br>
+        <br>
+
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/_MggheFzp7Q?si=P7uvpdcZU_X415u6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <br>
+        <br>
+
+        <div class="gray">
+            Trovate il paragrafo relativo a questo argomento alle pagg. 1264, 1265 del libro di testo (volume 4B)
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h3 class="yellow">Integrali fondamentali</h3>
+    <div class="esempi-container" style="max-height: 40vh; overflow-y: scroll;">                    
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int x^{\alpha} \,\,dx = \dfrac{x^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int \dfrac{1}{x} \,\, dx = ln\left(x\right) + c \quad \text{con} \quad x \gt 0
+                \]
+            </div>                                               
+            <div class="formula" style="width: fit-content;">
+                \[
+                  \int e^{x} \,\, dx = e^{x} + c
+                \]
+            </div>             
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int sin(x) \,\, dx = -cos(x) + c
+                \]
+            </div>                                   
+            <div class="formula" style="width: fit-content;">
+                \[
+                    \int cos(x) \,\, dx = sin(x) + c
+                \]
+            </div>                                                    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <h3 class="green">Esercizio 1</h3>
+    <br>    
+    <div>
+        \[
+            \int \, x \, sin(x) \,\,dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(sin(x) -x\,cos(x) + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>    
+    <div>
+        \[
+            \int \, x\,e^x \,\, dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(e^x \ (x -1) + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>    
+    <div>
+        \[
+            \int \, \dfrac{1}{\sqrt[3]{x^4}} - 2cos(x) \,\, dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(-\dfrac{3}{\sqrt[3]{x}} -2 sin(x) + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    <br>
+    <br>
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
