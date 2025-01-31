@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    Studiare e memorizzare le seguenti regole di integrazione, che estendono quelle studiate 
+    nelle lezioni precedenti.
+    
+    <br>
+    <br>
+
+    <h3 class="yellow">Regole di integrazione (generalizzate)</h3>
+    <div class="esempi-container">  
+        <ul>
+            <li>
+                \[
+                    \int f(x)^{\alpha} f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{f'(x)}{f(x)} \,\, dx = ln\left(|f(x)|\right) + c
+                \]
+            </li>
+            <br>            
+            <li>
+                \[
+                    \int e^{f(x)}f'(x) \,\, dx = e^{f(x)} + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int sin(f(x))f'(x) \,\, dx = -cos(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int cos(f(x))f'(x) \,\, dx = sin(f(x)) + c
+                \]
+            </li>            
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    Nei seguenti video viene come applicare le regole di integrazione generalizzate.
+    
+    <br>
+    <br>        
+
+    <h3 class="green">Esercizio guida 1</h3>    
+    <br>
+    <div>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/YTFEWSlIgys?si=T38pPz6469xfuDYp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 2</h3>
+    <br>
+    <div>
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/a2D0kSWiPUA?si=kdkaA-hgxvBdCKDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <h3 class="green">Esercizio 1</h3>
+    <br>    
+    <div>
+        \[
+            \int \, \dfrac{10x -3}{5x^2 - 3x + 1} \,\,dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(ln(5x^2 - 3x + 1) + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>    
+    <div>
+        \[
+            \int \, 14x\,\left(7x^2 - 2\right)^4 \,\, dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(\dfrac{\left(7x^2 - 2\right)^5}{5}  + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>    
+    <div>
+        \[
+            \int \, e^x cos(e^x - 3) \,\, dx
+        \]        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Soluzione</b>
+        <br>
+        \(sin(e^x - 3) + c\,\,\) con \(c \in \mathbb{R}\)
+    </div>
+
+    
+
+    
+
+    <br>
+    <br>
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
