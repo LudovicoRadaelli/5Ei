@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <!-- <h3 class="yellow">Teorema fondamentale del calcolo integrale</h3>
+    <div class="esempi-container">  
+        <div class="slide-container grayBorder">
+            <div class="slide1">
+                Sia \(f\) una funzione continua.
+                <br>
+                <span style="visibility: hidden;">
+                    Consideriamo l'intervallo \([1\,,\,\,x]\), dove \(x\) è un estremo variabile.
+                    <br>
+                    Sia \(A(x)\) l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\)
+                </span>
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(1).png" alt="">
+            </div>
+            <div class="slide1">
+                Sia \(f\) una funzione continua.
+                <br>
+                Consideriamo l'intervallo \([1\,,\,\,x]\), dove \(x\) è un estremo variabile.                
+                <br>
+                <span style="visibility: hidden;">                    
+                    Sia \(A(x)\) l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\)
+                </span>
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(1).png" alt="">
+            </div>
+            <div class="slide1">
+                Sia \(f\) una funzione continua.
+                <br>
+                Consideriamo l'intervallo \([1\,,\,\,x]\), dove \(x\) è un estremo variabile.                
+                <br>
+                <span style="visibility: hidden;">                    
+                    Sia \(A(x)\) l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\)
+                </span>
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(2).png" alt="">
+            </div>
+            <div class="slide1">
+                Sia \(f\) una funzione continua.
+                <br>
+                Consideriamo l'intervallo \([1\,,\,\,x]\), dove \(x\) è un estremo variabile.
+                <br>
+                Sia \(A(x)\) l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\)
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(2).png" alt="">
+            </div>
+            <div class="slide1">
+                Sia \(f\) una funzione continua.
+                <br>
+                Consideriamo l'intervallo \([1\,,\,\,x]\), dove \(x\) è un estremo variabile.
+                <br>
+                Sia \(A(x)\) l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\)
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+            </div>
+            <div class="slide1">
+                Osserviamo che \(A\) è una funzione. 
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Prende come input l'estremo destro dell'intervallo di 
+                        integrazione
+                    </li>
+                    <br>
+                    <li>
+                        restituisce come output il valore dell'area in corrispondenza di \([1\,,\,\,x]\).                
+                    </li>
+                </ul>                
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+            </div>
+            <div class="slide1">
+                Ad esempio 
+                \[
+                    A(1) = 0
+                \]
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/XZkaRPE38Ho?si=0CcxOj3yFJAHD05S&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+                <br>
+                (Ricordiamo questa informazione, ci sarà utile successivamente.) 
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                <div style="visibility: hidden;">
+                    Usiamo la definizione
+                    \[
+                        A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                    \]
+                    Interpretiamo graficamente il numeratore della frazione.
+                    <br>
+                    <br>
+                    <img src="img/teoremaFondamentale(3).png" alt="">
+                    <br>                    
+                </div>
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                <div style="visibility: hidden;">
+                    
+                    Interpretiamo graficamente il numeratore della frazione.
+                    <br>
+                    <br>                                    
+                    <img src="img/teoremaFondamentale(3).png" alt="">
+                    <br>                    
+                </div>
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                Interpretiamo graficamente il numeratore della frazione.
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                            
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                \(A(x + h)\) è l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x + h]\).
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">                
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                \(A(x)\) è l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\).
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                La differenza tra queste due aree è evidenziata in giallo. 
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                                              
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                Approssimiamo l'area di questa figura con l'area del rettagolo evidenziato in figura.
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                                              
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                Approssimiamo l'area di questa figura con l'area del rettagolo evidenziato in figura.
+                <br>
+                La base misura \(h\).
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                                              
+            </div>
+            <div class="slide1">
+                Proviamo a calcolare la derivata di \(A\). 
+                <br>
+                Usiamo la definizione
+                \[
+                    A'(x) = \lim_{h \to 0} \dfrac{A(x + h) - A(x)}{h}
+                \]
+                Approssimiamo l'area di questa figura con l'area del rettagolo evidenziato in figura.
+                <br>
+                La base misura \(h\).
+                <br>
+                L'altezza misura \(f(x)\)
+                <br>
+                <br>
+                <img src="img/teoremaFondamentale(3).png" alt="">
+                <br>                                              
+            </div>
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+
+        
+        <br>
+        <br>        
+                
+        Proviamo a calcolare la derivata di \(A\). Usiamo la definizione
+        \[
+            A'(x) = lim_{h \to 0\} \dfrac{A(x + h) - A(x)}{h}
+        \]
+        Interpretiamo graficamente il numeratore della frazione.
+        <br>
+        \(A(x + h)\) è l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x + h]\).
+        <br>
+        \(A(x)\) è l'area sottesa al grafico di \(f\) in corrispondenza di \([1\,,\,\,x]\).
+        <br>
+        La differenza tra queste due aree è evidenziata in giallo.
+        <br>
+        <br>
+        <img src="img/teoremaFondamentale(1).png" alt="">
+        <br>
+        <br>
+        Possiamo approssimare l'area della figura in giallo attraverso quella di un rettangolo avente 
+        <br>
+        <br>
+        <ul>
+            <li>
+                base il segmento che va dà \(x\) ad \(x + h\), che misura \(h\)
+            </li>
+            <br>
+            <li>
+                altezza \(f(x)\)
+            </li>
+        </ul>
+        
+        <br>
+    
+        
+        Questa approssimazione migliora via via che l'incremento \(h\) tende a \(0\).
+        <br>
+        Questo ci permette di riscrivere 
+        \[
+            A'(x) = \lim_{h \to 0} \dfrac{A(x + h ) - A(x)}{h} = \dfrac{h \cdot f(x)}{h} = f(x)
+        \]
+        Abbiamo così scoperto che la derivata della funzione \(A\) è proprio la funzione \(f\).
+        \[
+            A'(x) = f(x)
+        \]
+        Di conseguenza la funzione \(A\) è una <b>primitiva</b> di \(f\). 
+        <br>
+        Esempio concreto: se \(f(x) = x\) la funzione 
+        \[
+            A(x) = \int \, x \,dx = \dfrac{x^2}{2} + c
+        \]
+        
+
+        
+        
+
+
+        
+        
+    </div> 
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    -->
+
+    <h3 class="yellow">Teorema fondamentale del calcolo integrale</h3>
+    <div class="esempi-container">
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/L5nfo0ts2G0?si=fdGjl3n7sU4DdNwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q1Fyk0JnXhM?si=bk16WMFeFJjLi-41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio guida 1</h3>
+    <br>
+    <div>
+        \[
+            \int_{2}^{7} 5x + 1 \,\,dx
+        \]        
+        <br>            
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/HeH2TDpVjyc?si=dW7ewcxl21rvsUzj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida 2</h3>
+    <br>
+    <div>            
+        \[
+                \int_{1}^{4} 2\sqrt{x} + 3x \,\,dx
+        \]
+        <br>        
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/_jEPOyZegeQ?si=iYCfb7IjxiG4Ny_9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+    </div>
+        
+    
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+
+
+    <script>
+        var ggbApp1 = new GGBApplet(
+            {
+                "appName": "classic", 
+                "id": "gg1",
+                "showToolBar": false, 
+                "showAlgebraInput": false, 
+                "showMenuBar": false, 
+                "enableShiftDragZoom": false,
+                "scaleContainerClass":"geogebra-container",
+                "filename":"img/teoremaFondamentaleCalcolo.ggb"
+            }, 
+            true
+        );
+        
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');            
+        });
+    </script>
+
+    
+    <br>
+    <br>
+    
+
+    
+
+    
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
