@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>        
+    
+    <h3 class="yellow">Teorema fondamentale del calcolo integrale</h3>
+    <div class="esempi-container"> 
+        Il problema che ci ha condotti all'integrazione è quello della detemrinazione dell'area del grafico sotteso 
+        al grafico di una funzione in corrispondenza di un intervallo \([a\,,\,\,b]\).
+        Indicheremo il valore di quest'area con il simbolo
+        \[
+            \int_{a}^{b} f(x) dx 
+        \]
+        che si legge
+        \[
+            l'integrale\,\,di\,\,f\,(x)\,\,da\,\,a\,\,a\,\,b
+        \]        
+        <img src="img/1(1).png" alt="">
+        <br>
+
+        La strategia risolutiva che abbiamo adottato consiste nel procedere per approssimazione, cosiderando la somma dell'area di tanti rettangoli che 
+        approssimino la figura inziale.
+        <br>
+        <br>
+        <img src="img/1(2).png" alt="">
+        <br>
+        L'aspetto positivo di questo approccio è che l'errore che commettiamo nell'approssimazione diminuisce all'aumentare dei
+        numero dei sottointervalli nei quali ripartiamo \([a\,;\,\,b]\).
+        <br>
+        L'aspetto negativo è che il calcolo di un numero elevato somme diventa troppo oneroso dal punto di vista pratico. 
+        <br>
+        <br>
+        Interviene in nostro aiuto un risultato talmente importante da meritare il nome di <b>teorema fondamentale del calcolo integrale</b>.
+        <br>
+        <br>
+        <div class="grayBorder">
+            Data una funzione \(f\) continua in \([a\,;\,\,b]\) e detta \(F\) una <u>qualsiasi</u> primitiva di \(f\) si ha
+            \[
+                \int_{a}^{b} f(x) \,\, dx = F(b) -F(a)
+            \] 
+        </div>
+        <br>
+        <br>
+        Questo problema mette in collegamento il problema del calcolo dell'area sottesa ad un grafico con il problema dell'individuazione
+        della primitiva di una funzione (integrale indefinito).
+        <br>
+        <br>
+        Di seguito riporto la spiegazione euristica di questo risultato.
+        <br>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/WZ0oycSL0VY?si=b0aF1ZU6kk4smVT5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/a0KNOc6-sCw?si=A3qcntq9cc3Qecyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        <ul>
+            <li>
+                Ripetere l'enunciato del teorema fondamentale del calcolo integrale;
+            </li>
+            <br>
+            <li>
+                spiegare il suo significato;
+            </li>
+            <br>
+            <li>
+                dimostrare il teorema esponendo in primo luogo l'idea fondamentale della dimostrazione (\(A'(x) = f(x)\));
+            </li>            
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Svolgere i seguenti integrali definiti:
+        <br>
+        <br>
+        <ul>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int_{0}^{2} 5x^2 - 2x + 1 \,\, dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,\,\dfrac{34}{4}\)                    
+                </div>  
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int_{1}^{3} \dfrac{1}{x} + 3x \,\, dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,\,12 + ln(3)\)                    
+                </div>  
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int_{-2}^{2} x^5 + 3x^3 + x   \,\, dx
+                    \]
+                </div>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,\,0\)
+                </div>  
+            </li>
+        </ul>
+    </div>   
+    
+    
+    <br>
+    <br>
+    
+</body>
