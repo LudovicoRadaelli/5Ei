@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>                
+
+    <div class="gray">
+        Ricapitoliamo quanto visto fino ad ora.
+        
+        <br>
+        <br>
+
+        <div style="width: 100%; text-align: center;">
+            <b style="color: black; font-size: 1.5rem;">PARTE PRIMA</b>
+        </div>        
+        <br>
+
+        Come prima cosa abbiamo studiato le formule degli <b>integrali fondamentali</b>.
+        Sono regole che discendono da quelle delle derivate.
+        <br>
+        Ad esempio, poiché dalla regola di derivazione
+        \[
+            \left(\color{red}{}sin(x)\color{gray}{}\right)' = \color{blue}{}cos(x)
+        \]
+        possiamo scrivere la regola d'integrazione
+        \[
+            \int \,\color{blue}{}cos(x)\color{gray}{} \,\,dx = \color{red}{}sin(x)\color{gray}{} + c
+        \]
+    </div>
+    
+
+    <h3 class="yellow">Integrali fondamentali</h3>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int x^{\alpha} \,\,dx = \dfrac{x^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int \dfrac{1}{x} \,\, dx = ln\left(x\right) + c \quad \text{con} \quad x \gt 0
+                    \]
+                </div>
+            </li>
+            <br>            
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int e^{x} \,\, dx = e^{x} + c
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int sin(x) \,\, dx = -cos(x) + c
+                    \]
+                </div>
+            </li>
+            <br>
+            <li>
+                <div style="width: fit-content;">
+                    \[
+                        \int cos(x) \,\, dx = sin(x) + c
+                    \]
+                </div>
+            </li>            
+        </ul>
+    </div>
+    
+    <br>    
+
+    <div class="gray">
+        Subito dopo abbiamo visto le due proprietà di <b>linearità</b> dell'integrale
+    </div>
+
+    <br>    
+
+    <h3 class="yellow">Linearità dell'integrale</h3>
+    <div class="esempi-container">    
+        <div class="formula" style="width: fit-content;">
+            \[
+                \int \big[f(x) + g(x)\big] \,\,dx = \int f(x) \,\,dx + \int g(x) \,\,dx 
+            \]
+            
+            &Eacute; possibile distribuire l'integrale su una somma di funzioni.
+            
+        </div>
+
+        <div class="formula" style="width: fit-content;">
+            \[
+                \int \big[a \,f(x) \big] \,\,dx = a \, \int f(x) \,\,dx  
+            \]
+            
+            &Eacute; possibile portare le costanti moltiplicative fuori dal segno di integrazione.
+            
+        </div>
+    </div>
+
+    <br>
+
+    <div class="gray">
+        Conoscendo gli integrali fondamentali e sfruttando la linearità dell'integrale 
+        è possibile calcolare l'integrale di un'ampia classe di funzioni.
+        <br>
+        Di seguito le schede dove potete trovare esercizi a riguardo.
+
+        <br>
+        <br>
+
+        <ul>
+            <li>
+                <a class="gray" href="3.html">Scheda 3</a>
+            </li>
+            <br>
+            <li>
+                <a class="gray" href="4.html">Scheda 4</a>
+            </li>
+            <br>
+            <li>
+                <a class="gray" href="5.html">Scheda 5</a>
+            </li>
+        </ul>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>       
+        
+        <div style="width: 100%; text-align: center;">
+            <b style="color: black; font-size: 1.5rem;">PARTE SECONDA</b>
+        </div>        
+        <br>
+
+        Dalla formula di derivazione di una funzione composta discendondo le <b>formule generalizzate 
+            degli integrali fondamentali</b>.
+        <br>
+        Consideriamo ad esempio la derivata
+        \[
+            \left[sin(\color{blue}x^2 - 1\color{gray}{})\right]' = cos(\color{blue}x^2 - 1\color{gray}{}) \cdot \color{black}{}2x
+        \]
+        poiché
+        <div class="formula">
+            \[
+                \begin{align*}
+                    &g(x) = sin(x) \,\,\Rightarrow\,\, g'(x) = cos(x) \,\,\Rightarrow\,\, g'\Big(f(x)\Big) = cos(x^2 - 1)
+                    \\\\
+                    &f(x) = x^2 - 1 \,\,\Rightarrow\,\, f'(x) = 2x 
+                \end{align*}
+            \]
+        </div>
+        Osserviamo che la struttura di questa derivata appena svolta è         
+        \[
+            \Big[sin\left(\color{blue}{}f(x)\color{gray}{}\right)\Big]' = cos\left(\color{blue}{}f(x)\color{gray}{}\right) \cdot \color{black}{}f'(x)
+        \]
+        Da ciò deriva la regola d'integrazione
+        \[
+            \int  cos\left(\color{blue}{}f(x)\color{gray}{}\right) \cdot \color{black}{}f'(x)\color{gray}{} \,\, x = sin\left(\color{blue}{}f(x)\color{gray}{}\right) + c
+        \]
+        che generalizza l'integrale 
+        \[
+            \int cos(x) \,\,dx = sin(x) + c
+        \]        
+    </div>
+    
+
+    <h3 class="yellow">Integrali fondamentali generalizzati</h3>
+    <div class="esempi-container">  
+        <ul>
+            <li>
+                \[
+                    \int f(x)^{\alpha} f'(x) \,\,dx = \dfrac{f(x)^{\alpha + 1}}{\alpha + 1} + c \quad \text{con} \quad \alpha \neq -1
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int \dfrac{f'(x)}{f(x)} \,\, dx = ln\left(|f(x)|\right) + c
+                \]
+            </li>
+            <br>            
+            <li>
+                \[
+                    \int e^{f(x)}f'(x) \,\, dx = e^{f(x)} + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int sin(f(x))f'(x) \,\, dx = -cos(f(x)) + c
+                \]
+            </li>
+            <br>
+            <li>
+                \[
+                    \int cos(f(x))f'(x) \,\, dx = sin(f(x)) + c
+                \]
+            </li>            
+        </ul>
+    </div>
+
+
+    <br>
+
+    <div class="gray">
+
+        Di seguito trovate una scheda di esercizi riguardo questo argomento. Oltre ad essa abbiamo 
+        svolto diverse esercitazioni in classe.
+        <br>
+        <br>
+        <ul>
+            <li>
+                <a class="gray" href="8.html">Scheda 8</a>
+            </li>            
+        </ul>        
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    
+    <div style="width: 100%; text-align: center;">
+        <b style="color: black; font-size: 1.5rem;">PARTE TERZA</b>
+    </div>        
+    
+    <br>
+
+    <h3 class="yellow">Integrazione per parti</h3>        
+    <div class="esempi-container"> 
+        Scrivo di seguito la formula di integrazione per parti
+        
+        <div class="formula" style="font-size: 1rem;">
+            \[
+                \int \, f'(x) \cdot g(x) \,\, dx = f(x) \cdot g(x) - \int \, f(x) \cdot g'(x) \,\,dx
+            \]
+        </div>        
+
+        <iframe style="width: 100%" src="https://www.youtube.com/embed/_MggheFzp7Q?si=P7uvpdcZU_X415u6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+    </div>
+
+    <br>
+    <br>
+
+    <div class="gray">
+        La tecnica di <b>integrazione per parti</b> discende dalla regola di Leibniz. 
+        <br>
+        Dimostriamolo:
+
+        <div class="formula">
+            \[
+                \begin{align*}
+                    \Big[f(x)g(x)\Big]' &= f'(x)g(x) + f(x)g'(x)
+                    \\\\
+                    \color{blue}{}\int\color{gray} \Big[f(x)g(x)\Big]' \,\,\color{blue}{}dx\color{gray} &= \color{blue}{}\int\color{gray} f'(x)g(x) + f(x)g'(x) \,\,\color{blue}{}dx\color{gray}
+                    \\\\
+                    \cancel{\int } \Big[f(x)g(x)\Big]^{\cancel{'}} \,\, dx &= \int f'(x)g(x) \,\, dx + \int f(x)g'(x) \,\, dx
+                    \\\\
+                    f(x)g(x) &= \int f'(x)g(x) \,\, dx + \int f(x)g'(x) \,\, dx
+                    \\\\
+                    \int f'(x)g(x) \,\, dx &= f(x)g(x) - \int f(x)g'(x) \,\, dx
+                \end{align*}
+            \]
+        </div>
+
+        <br>
+
+
+        Di seguito trovate le schede di esercizio riguardanti l'integrazione per parti
+        <br>
+        <br>
+        <ul>
+            <li>
+                <a href="6.html" class="gray">Scheda 6</a>
+            </li>
+            <br>
+            <li>
+                <a href="7.html" class="gray">Scheda 7</a>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <div style="width: 100%; text-align: center;">
+        <b style="color: black; font-size: 1.5rem;">PARTE QUARTA</b>
+    </div>        
+    
+    <br>
+
+    <h3 class="yellow">Teorema fondamentale del calcolo integrale</h3>
+    <div class="esempi-container">        
+        L'enunciato del teorema è il seguente 
+        
+        <br>
+        <br>
+
+        <div class="grayBorder">
+            Data una funzione \(f\) continua in \([a\,;\,\,b]\) e detta \(F\) una <u>qualsiasi</u> primitiva di \(f\) si ha
+            \[
+                \int_{a}^{b} f(x) \,\, dx = F(b) -F(a)
+            \] 
+        </div>        
+
+        <br>
+
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/L5nfo0ts2G0?si=fdGjl3n7sU4DdNwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/Q1Fyk0JnXhM?si=bk16WMFeFJjLi-41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="gray">
+        Di seguito sono riportate le schede di esercizio che abbiamo affrontato a riguardo
+
+        <br>
+        <br>
+
+        <ul>
+            <li>
+                <a href="9.html" class="gray">Scheda 9</a>   
+            </li>
+            <br>
+            <li>
+                <a href="10.html" class="gray">Scheda 10</a>
+            </li>
+            <br>
+            <li>
+                <a href="11.html" class="gray">Scheda 11</a>
+            </li>
+            <br>
+            <li>
+                <a href="12.html" class="gray">Scheda 12</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    
+</body>
