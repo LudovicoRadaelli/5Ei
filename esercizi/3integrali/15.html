@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>        
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Individuare gli intervalli di monotonia della funzione 
+        \[
+            f(x) = x^3 + 6x^2 + 3x - 1
+        \]
+    </div>
+    <br>
+    <br>
+    <div class="gray">   
+        <b>Soluzione</b>     
+        <br>        
+        Il dominio della funzione è \(D = \mathbb{R}\).
+        <br>
+        La derivata della funzione è
+        \[
+            f'(x) = 3x^2 + 12x + 3
+        \]
+        Studiando il segno di \(f'\) stabiliamo che la funzione è 
+        <br>
+        <br>
+        <ul>
+            <li>
+                <b>crescente</b> per 
+                <div class="formula">
+                    \[
+                        x \in (-\infty\,,\,\,-3) \cup (-1\,,\,\,+\infty)
+                    \]
+                </div>
+            </li>
+            <li>
+                <b>decrescente</b> per 
+                <div class="formula">
+                    \[
+                        x \in (-3\,,\,\,-1)
+                    \]
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Individuare gli intervalli di monotonia della funzione 
+        \[
+            f(x) = ln\left(5x^2 - 4\right)
+        \]
+    </div>
+    <br>
+    <br>
+    <div class="gray">   
+        <b>Soluzione</b>     
+        <br>        
+        Il dominio della funzione è
+        \[
+            D = \left(-\infty\,,\,\,-\sqrt{\dfrac{4}{5}}\right) \cup \left(\sqrt{\dfrac{4}{5}}\,,\,\,+\infty\right)
+        \]
+        Usando la formula di derivazione di una funzione composta troviamo che
+        \[
+            f'(x) = \dfrac{10x}{5x^2 -4}
+        \]
+        Studiando il segno di \(f'\) stabiliamo che la funzione è 
+        <br>
+        <br>
+        <ul>
+            <li>
+                <b>crescente</b> per 
+                <div class="formula">
+                    \[
+                        x \in \left(\sqrt{\dfrac{4}{5}}\,,\,\,+\infty\right)
+                    \]
+                </div>
+            </li>
+            <li>
+                <b>decrescente</b> per 
+                <div class="formula">
+                    \[
+                        x \in \left(-\infty\,,\,\,-\sqrt{\dfrac{4}{5}}\right)
+                    \]
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    
+</body>
